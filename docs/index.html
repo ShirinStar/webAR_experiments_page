@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="webAR basic examples">
+  <meta name="keywords" content="webAR, JavaScript, Threejs, AR.js, webXR">
+  <meta name="author" content="shirn anlen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Work+Sans&display=swap"
+    rel="stylesheet">
+  <title>webAR experiments</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">WebAR experiments</h1>
+    <p class="introPara">The goal of this collection is to provide a set of basic examples that introduce the various
+      features in the Javascript-based Augmented Reality (AR) library and Three.js.</p>
+    <p class="pageLinks"> <a class="pageLinks link" href='#arjs'>AR.JS </a>
+      | WebXR
+      | <a class="pageLinks link" href='#accessibility'>Accessibility practices</a></p>
+
+
+    <div id='arjs'>
+      <h1 class="subTitle">AR.JS</h1>
+      <p class="explainPara"><a href='https://ar-js-org.github.io/AR.js-Docs/' target="_blank">AR.JS</a> is a web
+        library that is built on top of the <a href="http://www.artoolkitx.org/" target="_blank">ARToolKit</a> library.
+        ARToolKit solves two key problems in AR: viewport tracking and virtual interaction, it detects the device camera
+        and places a virtual camera to calculate the point to overlay the 3D graphics.
+        AR.JS main features are Image Tracking, Location based AR and Marker tracking.
+        <br />
+        <br />In <a href="https://github.com/ShirinStar/AR.js-Three.js-Webpack-boilerplate" target="_blank">this link
+        </a>you can find a boiler-plate for AR.js + Three.js + Webpack.
+        <br /> These examples focuses on Marker Tracking:
+      </p>
+    </div>
+
+    <div class="examplesCointainer">
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Hello Cube</p>
+        <a href="./assets/1.jpg" target="_blank">
+          <img src="./assets/1.jpg" / alt='virtual cube on a marker'>
+        </a>
+        <p class="explainText">
+          A basic scene that superimposes a cube on a AR.JS marker.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/1_arjs_cube"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Refraction</p>
+        <a href="./assets/2.gif" target="_blank">
+          <img src="./assets/2.gif" / alt='virtual torus rotating and reflecting the environment'>
+        </a>
+        <p class="explainText">
+          Creates a rotating torus knot above a custom marker. The surface of the knot refracts the scene behind it.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/1_arjs_cube"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Reflection and Refraction</p>
+        <a href="./assets/3.gif" target="_blank">
+          <img src="./assets/3.gif" / alt='bubbles come out from a marker'>
+        </a>
+        <p class="explainText">
+          Bubbles come out of a marker, cast shadows and reflect the physical environment.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/2_arjs_bubbles"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Text example</p>
+        <a href="./assets/4.gif" target="_blank">
+          <img src="./assets/4.gif" / alt='text fall on a marker'>
+        </a>
+        <p class="explainText">
+          3D text fall towards a marker position, using Cannon.js physics library.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/3_arjs_text"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Hole in the wall</p>
+        <a href="./assets/5.jpg" target="_blank">
+          <img src="./assets/5.jpg" / alt='Hole in the wall effect'>
+        </a>
+        <p class="explainText">
+          A "hole in the wall" effect. Uses a box geometry to mask the hidden parts of the hole.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/4_arjs_insideCube"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Hole in the wall #2</p>
+        <a href="./assets/6.gif" target="_blank">
+          <img src="./assets/6.gif" / alt='Hole in the wall effect'>
+        </a>
+        <p class="explainText">
+          Another "hole in the wall" effect, masking a 3D model indside a box geometry.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/5_arjs_modelInsideCube"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Poratl</p>
+        <a href="./assets/7.gif" target="_blank">
+          <img src="./assets/7.gif" / alt='Portal to another world effect'>
+        </a>
+        <p class="explainText">
+          Creating a "portal to another world" effect. Only visible from one side.
+          Not very robust.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/tree/main/6_arjs_window"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Video on marker</p>
+        <a href="./assets/10.gif" target="_blank">
+          <img src="./assets/10.gif" / alt='video evolve to noise'>
+        </a>
+        <p class="explainText">
+          Video texture start with marker trigger, evolves to particles noise when finished.
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/Inverse-Surveillance-Project/tree/main/visuals_experimentation/ar_video_noise"
+            target="_blank">source code</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div id='accessibility'>
+      <h1 class="subTitle">Accessibility practices</h1>
+      <p class="explainPara"> a series of exercises that supports accessibility in order to investigate how inclusive AR
+        techniques can build meaningful design solutions for all.</p>
+    </div>
+
+    <div class="examplesCointainer">
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Lost marker notification</p>
+        <a href="./assets/8.gif" target="_blank">
+          <img src="./assets/8.gif" / alt='notification when marker is lost'>
+        </a>
+        <p class="explainText">
+          Adding notification when marker is lost to assit in re-aiming the camera.
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/webAR_experiments/tree/main/9_arjs_accessibilty_lost_marker_notification"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Found marker vibration</p>
+        <a href="./assets/9.jpg" target="_blank">
+          <img src="./assets/9.jpg" / alt='sphere with noise affected by vibration'>
+        </a>
+        <p class="explainText">
+          Adding device vibration when marker is found, affecting the 3D sphere.
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/webAR_experiments/tree/main/10_arjs_accessibilty_lost_marker_notification_n_vibration"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <!-- <div class="exampleFrame">
+        <p class="exampleTitle"> Contast adjusment</p>
+        <img src="./assets/9.jpg" / alt='wip'>
+        <p class="explainText">
+          wip
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/webAR_experiments/tree/main/10_arjs_accessibilty_lost_marker_notification_n_vibration"
+            target="_blank">source code</a>
+        </p>
+      </div> -->
+
+    </div>
+
+  </div>
+
+  <footer><a href="https://github.com/ShirinStar" target="_blank">shirin anlen</a></footer>
+</body>
+
+</html>
