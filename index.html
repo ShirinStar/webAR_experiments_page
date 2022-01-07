@@ -22,7 +22,7 @@
     <p class="introPara">The goal of this collection is to provide a set of basic examples that introduce the various
       features in the Javascript-based Augmented Reality (AR) library and Three.js.</p>
     <p class="pageLinks"> <a class="pageLinks link" href='#arjs'>AR.JS </a>
-      | WebXR
+      | <a class="pageLinks link" href='#webxr'> WebXR </a>
       | <a class="pageLinks link" href='#accessibility'>Accessibility practices</a></p>
 
 
@@ -150,7 +150,31 @@
 
     </div>
 
-    <!-- ///here will go webXR experiments section///  -->
+    <div id='webxr'>
+      <h1 class="subTitle">webXR</h1>
+      <p class="explainPara"><a href='https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API' target="_blank">webXR</a> 
+        is a group of standards which are used together to support rendering 3D scenes to hardware designed for presenting virtual worlds (VR)
+        or for adding graphical imagery to the real world (AR).
+        <br />
+        <br />In <a href="https://github.com/ShirinStar/webAR_experiments/tree/main/13_webxr-threejs-boilerplate" target="_blank">this link
+        </a>you can find a boiler-plate for webXR + Three.js + Webpack.
+      </p>
+    </div>
+    <div class="examplesCointainer">
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Hello Cube</p>
+        <a href="./assets/13.gif" target="_blank">
+          <img src="./assets/13.gif" / alt='virtual cube'>
+        </a>
+        <p class="explainText">
+          A basic scene that superimposes a cube in the real world.
+          <br />
+          <br />
+          <a class="srcCode" href="https://github.com/ShirinStar/webAR_experiments/blob/main/13_webxr-threejs-boilerplate/src/script.js"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      </div>
 
     <div id='accessibility'>
       <h1 class="subTitle">Accessibility practices</h1>
@@ -175,8 +199,8 @@
       </div>
       <div class="exampleFrame">
         <p class="exampleTitle"> Found marker vibration</p>
-        <a href="./assets/9.jpg" target="_blank">
-          <img src="./assets/9.jpg" / alt='sphere with noise affected by vibration'>
+        <a href="./assets/9.gif" target="_blank">
+          <img src="./assets/9.gif" / alt='sphere with noise affected by vibration'>
         </a>
         <p class="explainText">
           Adding device vibration when marker is found, affecting the 3D sphere.
