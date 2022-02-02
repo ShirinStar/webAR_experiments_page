@@ -23,7 +23,7 @@
       features in the Javascript-based Augmented Reality (AR) library and Three.js.</p>
     <p class="pageLinks"> <a class="pageLinks link" href='#arjs'>AR.JS </a>
       | <a class="pageLinks link" href='#webxr'> WebXR </a>
-      | <a class="pageLinks link" href='#accessibility'>Accessibility practices</a></p>
+      <!-- | <a class="pageLinks link" href='#accessibility'>Accessibility practices</a></p> -->
 
 
     <div id='arjs'>
@@ -154,6 +154,54 @@
         </p>
       </div>
 
+    </div>
+
+
+    <div id='accessibility'>
+      <h2 class="subTitle">Accessibility practices with AR.js</h2>
+    </div>
+
+    <div class="examplesCointainer">
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Lost marker notification</p>
+        <a href="./assets/8.gif" target="_blank">
+          <img src="./assets/8.gif" / alt='notification when marker is lost'>
+        </a>
+        <p class="explainText">
+          Adding notification when marker is lost to assit in re-aiming the camera.
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/webAR_experiments/blob/main/9_arjs_accessibilty_lost_marker_notification/src/script.js"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Found marker vibration</p>
+        <a href="./assets/9.gif" target="_blank">
+          <img src="./assets/9.gif" / alt='sphere with noise affected by vibration'>
+        </a>
+        <p class="explainText">
+          Adding device vibration when marker is found, affecting the 3D sphere.
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/webAR_experiments/blob/main/10_arjs_accessibilty_lost_marker_notification_n_vibration/src/script.js"
+            target="_blank">source code</a>
+        </p>
+      </div>
+      <div class="exampleFrame">
+        <p class="exampleTitle"> Contast adjusment</p>
+        <img src="./assets/11.gif" / alt='text change contrast based on camera position'>
+        <p class="explainText">
+          Changing text contrast based on environment colors.
+          <br />
+          <br />
+          <a class="srcCode"
+            href="https://github.com/ShirinStar/webAR_experiments/blob/main/11_arjs_accessibility_contrast/src/script.js"
+            target="_blank">source code</a>
+        </p>
+      </div>
     </div>
 
     <div id='webxr'>
@@ -322,56 +370,23 @@
             target="_blank">source code</a>
         </p>
       </div>
-    </div>
-
-    <div id='accessibility'>
-      <h1 class="subTitle">Accessibility practices</h1>
-      <p class="explainPara"> a series of exercises that supports accessibility in order to investigate how inclusive AR
-        techniques can build meaningful design solutions for all.</p>
-    </div>
-
-    <div class="examplesCointainer">
       <div class="exampleFrame">
-        <p class="exampleTitle"> Lost marker notification</p>
-        <a href="./assets/8.gif" target="_blank">
-          <img src="./assets/8.gif" / alt='notification when marker is lost'>
+        <p class="exampleTitle"> Raycaster</p>
+        <a href="./assets/23.gif" target="_blank">
+          <img src="./assets/23.gif" / alt='Videos play according to camera position'>
         </a>
         <p class="explainText">
-          Adding notification when marker is lost to assit in re-aiming the camera.
+          Using Raycaster methods to pick the object the camera is pointing to. 
+          In this example the video plays if the camera points at it and pauses when it's not. 
           <br />
           <br />
           <a class="srcCode"
-            href="https://github.com/ShirinStar/webAR_experiments/blob/main/9_arjs_accessibilty_lost_marker_notification/src/script.js"
-            target="_blank">source code</a>
-        </p>
-      </div>
-      <div class="exampleFrame">
-        <p class="exampleTitle"> Found marker vibration</p>
-        <a href="./assets/9.gif" target="_blank">
-          <img src="./assets/9.gif" / alt='sphere with noise affected by vibration'>
-        </a>
-        <p class="explainText">
-          Adding device vibration when marker is found, affecting the 3D sphere.
-          <br />
-          <br />
-          <a class="srcCode"
-            href="https://github.com/ShirinStar/webAR_experiments/blob/main/10_arjs_accessibilty_lost_marker_notification_n_vibration/src/script.js"
-            target="_blank">source code</a>
-        </p>
-      </div>
-      <div class="exampleFrame">
-        <p class="exampleTitle"> Contast adjusment</p>
-        <img src="./assets/11.gif" / alt='text change contrast based on camera position'>
-        <p class="explainText">
-          Changing text contrast based on environment colors.
-          <br />
-          <br />
-          <a class="srcCode"
-            href="https://github.com/ShirinStar/webAR_experiments/blob/main/11_arjs_accessibility_contrast/src/script.js"
+            href="https://github.com/ShirinStar/webAR_experiments/blob/main/26_webxr-raycaster_video/src/script.js"
             target="_blank">source code</a>
         </p>
       </div>
     </div>
+
 
   </div>
 
