@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-color: #A34AFF;
+  background-color: #BFD048;
+  /* background-color: #A34AFF; */
 }
 
 h1, h2 {
@@ -21,13 +22,13 @@ p {
 }
 
 a {
-  color: white;
+  color: black;
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
 }
 
 a:hover {
-  color: #FFCD31;
+  background-color: white;
 }
 
 img {
@@ -45,44 +46,45 @@ img {
 
 .title {
   text-align: center;
-  background-color: #FF6558;
+  background-color: black;
+  /* background-color: #FF6558; */
   color: white;
   display: inline-block;
   padding: 4px 12px;
   letter-spacing: 1.5px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .introPara {
   font-size: 18px;
-  color: white;
+  color: black;
   max-width: 750px;
   margin: 10px auto;
 }
 
 .pageLinks {
   letter-spacing: 1.2px;
-  color: white;
+  color: black;
 }
 
 .pageLinks.link:hover {
-  background-color: #FFCD31;
-  border-radius: 2px;
+  background-color: white;
+  border-radius: 1px;
   color: black;
   padding: 1px;
 }
 
 .subTitle {
-  color: #FFCD31;
-  margin-top: 8%;
+  color: black;
+  font-weight: 700;
+  margin-top: 5%;
 }
 
 .explainPara {
   max-width: 900px;
   margin: 10px auto 50px auto;
-  color: white;
+  color: black;
 }
-
 
 .examplesCointainer {
   display: flex;
@@ -93,21 +95,21 @@ img {
 }
 
 .exampleFrame {
-  border: 3px solid #FF6558;
-  border-radius: 5px;
+  border: 3px solid white;
+  border-radius: 2px;
   display: inline-block;
   padding: 10px 20px;
   margin: 20px;
 }
 
 .exampleTitle {
-  background-color: #FFCD31;
+  background-color: white;
   color: black;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .explainText {
-  color: white;
+  color: black;
   font-size: 14px;
   max-width: 250px;
 }
@@ -119,7 +121,7 @@ img {
 
 footer {
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 100px;
   margin-bottom: 20px;
   letter-spacing: 1px;
